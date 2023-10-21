@@ -4,5 +4,6 @@ let url = "http://localhost:8082/api";
 
 export default {
   businessType(params){ return axios.get(`${url}/search/business-type`,{params}) },
-  categories(params){ return axios.get(`${url}/search/categories`,{params}) }
+  categories(params){ return axios.get(`${url}/search/categories`,{params}) },
+  getBusinessForType(params){ return axios.get(`${url}/search/business-for-type`,{params}) }
 }

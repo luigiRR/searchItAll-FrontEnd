@@ -21,7 +21,7 @@
       </div>
     </body>
     <footer class="h-24">
-
+      <Footer></Footer>
     </footer>
   </div>
 </template>
@@ -29,8 +29,8 @@
 <script setup>
   import leftBar from './components/LeftBar.vue'
   import HeaderActions from './components/HeaderActions.vue'
-import businessType from './components/businessType.vue';
-  
+  import businessType from './components/businessType.vue';
+  import Footer from './components/Footer.vue'
 
   function handleScroll(scroll){
     if(scroll.target.scrollTop > 10){

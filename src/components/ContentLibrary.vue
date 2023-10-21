@@ -32,6 +32,12 @@ export default {
             async categories(){
                 let response = await server.categories({});
                 this.category.list=response.data.list;
+                this.category.list.unshift({
+                    categoryId:0,
+                    categoryName:"Todo",
+                    comment1:"Todos",
+                    comment2:'fa-globe',
+                });
             }
         }
     }
